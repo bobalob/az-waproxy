@@ -19,4 +19,4 @@ Terraform will output the public IP and FQDN of the new server. For some reason,
 
 If you're on Windows in PowerShell you can connect to the VM like this
 
-    ssh (terraform show --json | ConvertFrom-Json).Values.outputs.ssh_string.value
+    ssh -o "UserKnownHostsFile=NUL" (terraform show --json | ConvertFrom-Json).Values.outputs.ssh_string.value
