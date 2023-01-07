@@ -6,6 +6,8 @@ Terraform config for a WhatsApp Proxy server in Azure using a linux VM.
 
 Use normal terraform flow to run, you'll need to set a few variables. You will need Azure CLI installed and terraform in your path.
 
+```management_range``` is the public IP of your current machine, it will open up SSH and the HAProxy management port to your public IP.
+
     git clone https://github.com/bobalob/az-waproxy
     cd az-waproxy
     terraform init
